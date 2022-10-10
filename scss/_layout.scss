@@ -1,0 +1,18 @@
+body {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+header, 
+main, 
+footer {
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.6rem;
+    justify-content: center;
+}

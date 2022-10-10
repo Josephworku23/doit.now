@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joseph Worku">
+    <meta name="description" content="Web App to track daily tasks. - by Joseph Worku">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph Protocols  -->
+    <meta property="og:title" content="doit.now">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="en_us">
+    <!-- title of the web page -->
+    <title>doit.now | Todo Tracker application - Joseph Worku</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>doit<span>.<span>now</span></span></h1>
+        <p>Tell me what you want to do</p>
+    </header>
+    <main>
+        <form action="" autocomplete="off">
+            <div class="form-control with-icon-left">
+                <label for="task">Add task</label>
+                <input type="text" name="task" id="task" placeholder="Do Something">
+                <i class="uil uil-clipboard"></i>
+            </div>
+        
+            <div class="form-control">
+                <label for="task_time">At</label>
+                <input type="time" name="task_time" id="task_time">
+            </div>
+            <button class="button"> <i class="button__icon uil uil-plus-circle"></i> <span class="button__text">add to my list</span></button>
+        </form>
+
+       <table class="task-list">
+        <thead>
+            <tr>
+                <th>My tasks</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+       </table>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; copyrigths reserved to Joseph Worku, 2022
+        </p>
+    </footer>
+</body>
+</html>
