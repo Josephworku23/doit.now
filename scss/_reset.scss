@@ -6,10 +6,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Lato, sans-serif;
 }
 
 :root {
-    font-size: 10px;
+    font-size: 62.5%; // approximately 10px 
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font: {
+        family: Lato;
+        size: 1.6rem;
+    }
+}
