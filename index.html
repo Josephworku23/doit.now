@@ -27,14 +27,30 @@
    <!-- MAIN -->
     <main>
         <form action="#" method="post">
-            <!-- TODO: ADD TWO FORM CONTROLS HERE -->
-
+            
+            <section class="form-controls">
+                <div class="width-70-percent">
+                    <label for="task">Add task</label>
+                    <div class="form-field">
+                        <input type="text" class="form-control" name="task" id="task" placeholder="Do something">
+                        <i class="uil uil-clipboard"></i>
+                    </div>
+                </div>
+                <div class="width-30-percent">
+                    <label for="task-time">At</label>
+                    <div class="form-field">
+                        <input type="time" class="form-control" name="task-time" id="task-time">
+                    </div>
+                </div>
+            </section>
 
             <button class="button">
                 <span class="button__icon uil uil-plus-circle"></span>
                 <span class="button__text">add to my list</span>
             </button>
         </form>
+
+        <!-- TODO: CREATE THE TASK LIST BELOW -->
     </main>
     <!-- FOOTER -->
     <footer>

@@ -23,6 +23,14 @@ body {
   color: #194FDA;
 }
 
+.width-70-percent {
+  width: 70%;
+}
+
+.width-30-percnet {
+  width: 30%;
+}
+
 .button {
   cursor: pointer;
   white-space: nowrap;
@@ -45,7 +53,40 @@ body {
   background-color: #1544bb;
 }
 .button:focus {
-  box-shadow: 2px 3px 0 rgba(21, 68, 187, 0.2705882353), -2px 3px 0 rgba(21, 68, 187, 0.2705882353), 2px -3px 0 rgba(21, 68, 187, 0.2705882353), -2px -3px 0 rgba(21, 68, 187, 0.2705882353);
+  box-shadow: 2px 3px 0 rgba(21, 68, 187, 0.6784313725), -2px 3px 0 rgba(21, 68, 187, 0.6784313725), 2px -3px 0 rgba(21, 68, 187, 0.6784313725), -2px -3px 0 rgba(21, 68, 187, 0.6784313725);
+}
+
+.form-field {
+  position: relative;
+}
+.form-field > .uil {
+  font-size: 1.8rem;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-60%);
+}
+
+.form-control {
+  border: 0.2rem solid transparent;
+  border-radius: 0.4rem;
+  background-color: #f2f2f2;
+  outline: none;
+  width: 100%;
+  transition: border-color 200ms ease-in;
+}
+.form-control[type=text] {
+  padding: 1rem 1rem 1rem 4rem;
+}
+.form-control[type=time] {
+  padding: 0.8rem;
+}
+.form-control:focus {
+  border-color: rgba(21, 68, 187, 0.6784313725);
+}
+.form-control:focus ~ .uil {
+  color: blue;
 }
 
 header,
@@ -72,6 +113,31 @@ header h1 .font-small {
   font-family: pacifico, sans-serif;
 }
 header p {
+  color: #757775;
+}
+
+main form,
+main form section {
+  display: flex;
+}
+main section.form-controls {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  justify-content: space-around;
+}
+main section.form-controls > div {
+  flex-grow: 1;
+}
+main form {
+  flex-direction: column;
+  gap: 1rem;
+}
+main form button {
+  align-self: center;
+}
+main form label {
+  display: block;
+  padding: 1rem 0;
   color: #757775;
 }
 

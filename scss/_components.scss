@@ -32,3 +32,39 @@
     }
 }
 
+.form-field {
+    position: relative;
+    & > .uil {
+        font-size: 1.8rem;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-60%);
+    }
+}
+
+.form-control {
+   border: .2rem solid transparent;
+   border-radius: .4rem;
+   background-color: colors.$clr-white-gray;
+   outline: none;
+   width: 100%;
+   transition: border-color 200ms ease-in;
+
+   &[type='text'] {
+    padding: 1rem 1rem 1rem 4rem;
+   }
+
+   &[type='time'] {
+    padding: .8rem;
+   }
+
+   &:focus {
+    border-color: colors.$clr-primary-light;
+   }
+
+   &:focus ~ .uil {
+    color: blue;
+   }
+}
